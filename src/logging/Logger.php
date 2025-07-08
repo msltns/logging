@@ -52,7 +52,7 @@ if ( ! class_exists( '\msltns\logging\Logger' ) ) {
          * @param   string  $path   The logfile path.
 		 * @return \Logger
 		 */
-		public static function instance( string $name = '', string $path = '' ) {
+		public static function instance( string $name, string $path = '' ) {
 			return self::getInstance( $name, $path );
 		}
         
@@ -63,7 +63,7 @@ if ( ! class_exists( '\msltns\logging\Logger' ) ) {
          * @param   string  $path   The logfile path.
 		 * @return \Logger
 		 */
-		public static function get_instance( string $name = '', string $path = '' ) {
+		public static function get_instance( string $name, string $path = '' ) {
 			return self::getInstance( $name, $path );
 		}
 		
@@ -74,7 +74,7 @@ if ( ! class_exists( '\msltns\logging\Logger' ) ) {
          * @param   string  $path   The logfile path.
 		 * @return \Logger
 		 */
-		public static function getInstance( string $name = '', string $path = '' ) {
+		public static function getInstance( string $name, string $path = '' ) {
 			if ( !isset( self::$instance ) ) {
 				self::$instance = new self();
 				self::$instance->init( $name, $path );
@@ -90,10 +90,7 @@ if ( ! class_exists( '\msltns\logging\Logger' ) ) {
 		 * @param	string	$path
 		 * @return 	void
 		 */
-		private function init( $name = '', $path = '' ) {
-			if ( empty( $name ) ) {
-				$name = 'wpwoodo';
-			}
+		private function init( string $name, string $path = '' ) {
 			if ( empty( $path ) ) {
 				$path = __DIR__ . '/../../../../debug.log';
 			}
