@@ -1,7 +1,7 @@
 {
-	"name": "msltns/logging",
-	"description": "This package provides logging utilities.",
-	"version": "v0.0.1",
+    "name": "msltns/logging",
+    "description": "This package provides logging utilities.",
+    "version": "v0.0.1",
     "license": "GPL",
     "authors": [
         {
@@ -9,18 +9,18 @@
             "email": "info@msltns.com"
         }
     ],
-	"require": {
+    "require": {
         "php": "^7.4|^8.0",
         "monolog/monolog": "^2.5",
         "psr/log": "^2.0",
         "vlucas/phpdotenv": "*"
-	},
-	"autoload": {
-		"psr-4": {
-			"msltns\\": "src/"
-		}
-	},
-	"config": {
-		"vendor-dir": "vendor"
-	}
+    },
+    "autoload": {
+        "psr-4": {
+            "msltns\\": "src/"
+        }
+    },
+    "config": {
+        "vendor-dir": "vendor"
+    }
 }
