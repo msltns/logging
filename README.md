@@ -1,1 +1,1 @@
-# WPWooDo Logging
+# A simple logging library
