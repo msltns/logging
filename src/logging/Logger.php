@@ -12,7 +12,7 @@ use msltns\logging\Formatter;
  *
  * @category 	Class
  * @package  	Utilities
- * @author 		Daniel Muenter <info@msltns.com>
+ * @author 		msltns <info@msltns.com>
  * @version  	0.0.1
  * @since   	0.0.1
  * @license 	GPL 3
